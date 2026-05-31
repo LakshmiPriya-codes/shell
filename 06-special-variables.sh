@@ -11,3 +11,5 @@ echo "Home dirctory: $HOME"
 echo "PID of the current scripit: $$"
 sleep 5 &
 echo "PID of background running just now: $!"
+wait &!
+echo "Line Number: $LINENUMBER"
