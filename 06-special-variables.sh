@@ -13,3 +13,4 @@ sleep 5 &
 echo "PID of background running just now: $!"
 wait &!
 echo "Line Number: $LINENO"
+echo "Script execited in $SECONS seconds"
