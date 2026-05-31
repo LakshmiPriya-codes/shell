@@ -11,8 +11,9 @@ echo "Home dirctory: $HOME"
 echo "PID of the current scripit: $$"
 sleep 5 &
 echo "PID of background running just now: $!"
-wait &!
+wait $!
 echo "Line Number: $LINENO"
 echo "Script execited in $SECONDS seconds"
 echo "Random number: $RANDOM"
+hfdbiahfjsd
 echo "Exit code of pri]evious command: $?"
