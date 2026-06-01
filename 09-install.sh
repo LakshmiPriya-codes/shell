@@ -37,6 +37,6 @@ if [ $? -ne 0 ]; then
 else
    echo "Installing nginx"
     dnf install nginx -y
-    validate MySQL $? 
+    validate nginx $? 
 fi     
 
