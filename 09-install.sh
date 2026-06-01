@@ -19,9 +19,9 @@ validate(){
 #echo "Im continuing..."
 
 
-dnf installed mysql -y
+dnf list installed mysql 
 
-if [ $? -ne 0 ]; then
+if [ $? -eq 0 ]; then
    echo "mysql is already installed.....skipping "
 else
    echo "Installing MySQL"
@@ -30,7 +30,7 @@ else
 fi     
 
 
-dnf installed nginx -y
+dnf list installed nginx 
 
 if [ $? -ne 0 ]; then
    echo "nginx is already installed.....skipping "
