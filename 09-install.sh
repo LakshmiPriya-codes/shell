@@ -10,14 +10,19 @@ fi
 
 #echo "Im continuing..."
 
-echo "Installing MySQL"
-dnf install myfggfhsql -y
+
+dnf installed myfggfhsql -y
 
 if [ $? -ne 0 ]; then
-  echo "Installing MySQl is....failed"
-  exit 1
-
+   echo "mysql is already installed.....skipping "
 else
-   echo "Installing MySQL is...Success"
+   echo "Installing MySQL"
+    dnf install myfggfhsql -y
 
+  if [ $? -ne 0 ]; then
+     echo "Installing MySQl is....failed"
+     exit 1
+  else
+      echo "Installing MySQL is...Success"
+  fi  
 fi     
