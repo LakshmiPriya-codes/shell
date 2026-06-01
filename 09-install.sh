@@ -11,7 +11,7 @@ fi
 #echo "Im continuing..."
 
 echo "Installing MySQL"
-dnf install Mysql -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]; then
   echo "Installing MySQl is....failed"
