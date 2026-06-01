@@ -12,10 +12,8 @@ NUMBER=$1
 
 if [ $NUMBER -gt 20 ]; then
  echo "Given Number $NUMBER is greater than 20"
-
 elif [$NUMBER -eq 20]; then
-   echo "Given Number $NUMBER us less than 20 " 
-
+   echo "Given Number $NUMBER is equals to 20 " 
  else
     echo "Given Number $NUMBER is less than 20"
  
