@@ -10,6 +10,6 @@ NUMBER =$1
 # le - less than or equal
 
 
-if[$NUMBER -gt 20]
+if [ $NUMBER -ge 20 ]; then
  echo "Given Number $NUMBER is greater than or equal to 20"
 fi 
