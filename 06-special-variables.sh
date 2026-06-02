@@ -15,5 +15,4 @@ wait $!
 echo "Line Number: $LINENO"
 echo "Script execited in $SECONDS seconds"
 echo "Random number: $RANDOM"
-hfdbiahfjsd
 echo "Exit code of pri]evious command: $?"
