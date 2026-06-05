@@ -20,7 +20,7 @@ validate(){
 
 #echo "Im continuing..."
 
- for package in $@ 
+ for package in $@
  do 
      echo "Insatlling $package"
      dnf list installed $package &>> $LOGS_FILE
