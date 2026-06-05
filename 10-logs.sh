@@ -5,7 +5,7 @@
 #second argument --> exit code
  
  USERID=$(id -u)
- LOGS_DIR=/home/ec2-user/shell-logs
+ LOGS_DIR=/var/log/shell-practice
  LOGS_FILE="$LOGS_DIR/$0.log" # home/ec2-user/shell-logs/10-logs.sh
 
 validate(){
