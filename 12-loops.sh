@@ -23,7 +23,7 @@ validate(){
 
  for package in $@
  do 
-     echo "Insatlling $package"
+     echo "$TIMESTAMP [Info] Insatlling $package"
      dnf list installed $package &>> $LOGS_FILE
 
     if [ $? -ne 0 ]; then 
