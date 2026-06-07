@@ -4,7 +4,7 @@
  USERID=$(id -u)
  LOGS_DIR=/var/log/shell-script
  LOGS_FILE="$LOGS_DIR/$0.log" 
- TIME-STAMP=$(date "+%Y-%m-%d %H:%M:%S")
+ TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
  R= "\e[31m"
  G= "\e[32m"
  Y= "\e[33m"
@@ -17,10 +17,10 @@ fi
 
 validate(){
     if [ $2 -ne 0 ]; then
-     echo  -e "$TIME-STAMP [Error] Installing $1 is.... $R failed $N" | tee -a $LOGS_FILE
+     echo  -e "$TIMESTAMP [Error] Installing $1 is.... $R failed $N" | tee -a $LOGS_FILE
      exit 1
   else
-      echo -e "$TIME-STAMP [Info] Installing $1 is...$G Success $N" | tee -a $LOGS_FILE
+      echo -e "$TIMESTAMP [Info] Installing $1 is...$G Success $N" | tee -a $LOGS_FILE
   fi  
 }
 
@@ -35,6 +35,6 @@ validate(){
      dnf install $package -y &>> $LOGS_FILE
      validate "Installing $package" $?
      else
-         echo -e "$TIME-STAMP [Info] $package already installed..... $Y Skipping $N"
+         echo -e "$TIMESTAMP  [Info] $package already installed..... $Y Skipping $N"
     fi    
  done
