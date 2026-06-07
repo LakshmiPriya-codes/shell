@@ -19,7 +19,7 @@ fi
 
  for package in $@
  do 
-     echo "$TIMES-TAMP [Info] Insatlling $package"
+     echo "$TIMESTAMP [Info] Insatlling $package"
      dnf list installed $package &>> $LOGS_FILE
 
     if [ $? -ne 0 ]; then 
