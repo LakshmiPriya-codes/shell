@@ -10,7 +10,7 @@
  Y="\e[33m"
  N="\e[0m"
 
- trap 'echo "error $LINENO", command: "$BASH_COMMAND" '
+ trap 'echo "error $LINENO", command: $BASH_COMMAND" '
 
 if [ $USERID -ne 0 ]; then 
     echo "Please run this script with root access"
