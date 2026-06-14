@@ -13,4 +13,8 @@ DAYS=${2:-14} #default 14 days
     
 
      
+if [ ! -d $SOURCE_DIR ]; then
+    echo "Error directory $source_dir does nort exit"
+    exit 1
+fi    
 
